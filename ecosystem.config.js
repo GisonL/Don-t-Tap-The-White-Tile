@@ -1,14 +1,16 @@
+const appName = 'tap-tap_node'
 module.exports = {
   apps: [
     {
-      name: 'tap-tap_node',
+      name: appName,
       script: 'app.js',
       env: {
         NODE_ENV: 'development'
       },
       env_production: {
         NODE_ENV: 'production'
-      }
+      },
+      output: `../log/${appName}`
     }
   ],
   deploy: {
@@ -18,8 +20,8 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:GisonL/Don-t-Tap-The-White-Tile.git',
       path: '/var/www/Don-t-Tap-The-White-Tile',
-      'post-deploy':'git pull && npm install && pm2 reload ecosystem.config.js --env production'
-      // 'post-deploy':'git pull && npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy':
+        'git pull && npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 }
