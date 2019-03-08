@@ -10,9 +10,9 @@ module.exports = {
       env_production: {
         NODE_ENV: 'production'
       },
-      error_file: `/var/www/log/${appName}/`,
-      out_file: `/var/www/log/${appName}/`,
-      pid_file: `/var/www/log/${appName}/`
+      error_file: `/var/www/log/${appName}/${appName}_error.log`,
+      out_file: `/var/www/log/${appName}/${appName}_out.log`,
+      pid_file: `/var/www/log/${appName}/${appName}_pid.log`
     }
   ],
   deploy: {
