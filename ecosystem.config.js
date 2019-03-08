@@ -18,7 +18,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:GisonL/Don-t-Tap-The-White-Tile.git',
       path: '/root/Don-t-Tap-The-White-Tile',
-      'post-deploy':'git pull && npm -v'
+      'post-deploy':'git pull && npm install && pm2 reload ecosystem.config.js --env production'
       // 'post-deploy':'git pull && npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
