@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/GisonL/Don-t-Tap-The-White-Tile#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-static": "^1.2.6"
   }
 }
