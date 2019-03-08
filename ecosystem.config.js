@@ -1,5 +1,5 @@
 module.exports = {
-  app: [
+  apps: [
     {
       name: 'tap-tap_node',
       script: 'app.js',
