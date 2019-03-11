@@ -4,4 +4,4 @@ const app = express()
 const exStatic=require("express-static");
 const fs = require('fs')
 app.use(exStatic('./'))
-app.listen(80,()=>console.log('server running on port 80'))
+app.listen(8080,()=>console.log('server running on port 8080'))
